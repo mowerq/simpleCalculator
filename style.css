@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
+  }
+
+html, body {
+    display: flex;
+    height: 100vh;
+    font-family: "myFont", sans-serif;
+    flex-direction: column;
+    background-image: url("img/bg-image.jpg");
+    background-size: cover;
+    color: #CCCCCC;
+}
+
+header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+h2, h3 {
+    margin-bottom: 0;
+}
+
+.page-content {
+    flex: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+footer {
+    flex: 1;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    color: #8B989E;
+    font-family: sans-serif;
+}
+
+.calculator-screen {
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: #233845;
+    color: #CCCCCC;
+    font-family: "myFont", sans-serif;
+
+
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: "myFont", sans-serif;
+    border-radius: 15%;
+    background-color: #1e3a4b;
+    color: #CCCCCC;
+}
+
+button:active {
+    font-size: 26px;
+}
+
+i:active {
+    font-size: 30px;
+}
+
+.button-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.all-calculator-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calculator {
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 40px;
+    border-style: ridge;
+    border-radius: 2%;
+    border-width: 4px;
+    box-shadow: 15px 25px 10px #071722;
+    border-color: #1e3a4b;
+    background-image: linear-gradient(#2b5874c4, #1e3a4ba2);
+}
+
+
+label, .result {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #CCCCCC;
+    font-family: "myFont", sans-serif;
+
+}

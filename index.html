@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Elev8 Project</title>
+</head>
+<body>
+    <header>
+        <h2>HTML Project: The Calculator</h2>
+    </header>
+    <div class="page-content">
+            <div class="calculator">
+                <div class="calculator-screen">
+                    <label for="result">Result:</label>&nbsp;
+                    <p class="result" id="result">0</p>
+                </div>
+                <div class="calculator-content">
+                    <textarea name="calculation-string" id="calculation-string" cols="15" rows="2" disabled></textarea>
+                    <table class="all-calculator-buttons">
+                        <div class="button-row">
+                            <button class="calculator-buttons" onclick="updateCalculationString(`&#40;`)">&#40;</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(`&#41;`)">&#41;</button>
+                            <button class="calculator-buttons" onclick="resetCalculationString()">C</button>
+                            <button style="display: flex; justify-content: center; align-items: center;" class="calculator-buttons" onclick="removeOneChar()"><i class="material-icons">backspace</i></button>
+                        </div>
+                        <div class="button-row">
+                            <button class="calculator-buttons" onclick="updateCalculationString(1)">1</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(2)">2</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(3)">3</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(`+`)">+</button>
+                        </div>
+                        <div class="button-row">
+                            <button class="calculator-buttons" onclick="updateCalculationString(4)">4</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(5)">5</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(6)">6</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(`-`)">-</button>
+                        </div>
+                        <div class="button-row">
+                            <button class="calculator-buttons" onclick="updateCalculationString(7)">7</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(8)">8</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(9)">9</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(`*`)">*</button>
+                        </div>
+                        <div class="button-row">
+                            <button class="calculator-buttons" onclick="updateCalculationString(0)">0</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(`.`)">.</button>
+                            <button class="calculator-buttons" onclick="calculate()">=</button>
+                            <button class="calculator-buttons" onclick="updateCalculationString(`/`)">/</button>
+                        </div>
+                        
+                    </table>
+                </div>
+            </div>
+           
+
+    </div>
+    <footer>
+        <p>03 August 2023. All rights reserved. Murat Gürgenyatağı</p>
+    </footer>
+</body>
+</html>
